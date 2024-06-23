@@ -17,7 +17,7 @@ class ClapTrap
         ClapTrap();
         ClapTrap(std::string name);
         ClapTrap(const ClapTrap& other);
-        ~ClapTrap();
+        virtual ~ClapTrap();//virtualをつけないと、動的に領域を確保した際に、派生クラスのデストラクタが呼び出されない
         ClapTrap &operator=(const ClapTrap &src);
         void attack(const std::string& target);
         void takeDamage(unsigned int amount);

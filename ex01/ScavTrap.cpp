@@ -4,7 +4,7 @@ ScavTrap::ScavTrap() : ClapTrap() {
   _hitPoints = 100;
   _energyPoints = 50;
   _attackDamage = 20;
-  std::cout << "ScavTrap " << _name << " called" << std::endl;
+  std::cout << "ScavTrap " << _name << " called!" << std::endl;
 }
 
 ScavTrap::ScavTrap(const std::string& name) : ClapTrap(name) {
